@@ -3,29 +3,7 @@
   "version": "0.0.0",
   "description": "Perform a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function accepting a callback and assign results to a provided output ndarray.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "directories": {
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples"
-  },
+  "main": "./index.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -34,56 +12,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/array-base-copy-indexed": "^0.2.2",
-    "@stdlib/array-base-indices-complement": "github:stdlib-js/array-base-indices-complement#main",
-    "@stdlib/array-base-join": "^0.1.1",
-    "@stdlib/array-base-put": "^0.0.2",
-    "@stdlib/array-base-take-indexed": "^0.2.2",
-    "@stdlib/array-base-take-indexed2": "github:stdlib-js/array-base-take-indexed2#main",
-    "@stdlib/array-base-without": "github:stdlib-js/array-base-without#main",
-    "@stdlib/array-base-zeros": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/ndarray-base-assign": "^0.1.1",
-    "@stdlib/ndarray-base-empty-like": "^0.3.0",
-    "@stdlib/ndarray-base-ind2sub": "^0.2.2",
-    "@stdlib/ndarray-base-iteration-order": "^0.2.2",
-    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.2.2",
-    "@stdlib/ndarray-base-ndarraylike2ndarray": "github:stdlib-js/ndarray-base-ndarraylike2ndarray#main",
-    "@stdlib/ndarray-base-ndarraylike2object": "^0.2.2",
-    "@stdlib/ndarray-base-numel": "^0.2.2",
-    "@stdlib/ndarray-base-strides2order": "^0.2.2",
-    "@stdlib/ndarray-base-to-unique-normalized-indices": "github:stdlib-js/ndarray-base-to-unique-normalized-indices#main",
-    "@stdlib/ndarray-base-unary-loop-interchange-order": "^0.2.1",
-    "@stdlib/ndarray-base-unary-tiling-block-size": "^0.2.2",
-    "@stdlib/ndarray-base-vind2bind": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
-  },
-  "devDependencies": {
-    "@stdlib/ndarray-base-to-array": "^0.2.1",
-    "@stdlib/random-array-discrete-uniform": "^0.2.1",
-    "@stdlib/stats-base-ndarray-max-by": "github:stdlib-js/stats-base-ndarray-max-by#main",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "base",
@@ -97,7 +25,6 @@
     "accumulation",
     "vector"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
