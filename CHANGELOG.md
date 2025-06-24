@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-09)
+## Unreleased (2025-06-24)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`c90080b`](https://github.com/stdlib-js/stdlib/commit/c90080b29f28aabee615d9f72a13c78cc6581436) - **docs:** fix example _(by Athan Reines)_
 -   [`1782090`](https://github.com/stdlib-js/stdlib/commit/17820909290d01df1ee44cc370d18e74d76291d9) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`b228b5e`](https://github.com/stdlib-js/stdlib/commit/b228b5e89da183b38160c6cd6f9908a07918dd09) - **feat:** add `ndarray/base/unary-reduce-strided1d-by` [(#7214)](https://github.com/stdlib-js/stdlib/pull/7214) _(by Muhammad Haris, Athan Reines)_
 
