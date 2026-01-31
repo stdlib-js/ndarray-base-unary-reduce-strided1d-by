@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-unary-reduce-strided1d-by",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Perform a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function accepting a callback and assign results to a provided output ndarray.",
   "license": "Apache-2.0",
   "author": {
@@ -36,11 +36,11 @@
   },
   "dependencies": {
     "@stdlib/array-base-copy-indexed": "^0.2.2",
-    "@stdlib/array-base-indices-complement": "github:stdlib-js/array-base-indices-complement#main",
+    "@stdlib/array-base-indices-complement": "^0.1.0",
     "@stdlib/array-base-join": "^0.1.1",
     "@stdlib/array-base-put": "^0.0.2",
     "@stdlib/array-base-take-indexed": "^0.2.2",
-    "@stdlib/array-base-take-indexed2": "github:stdlib-js/array-base-take-indexed2#main",
+    "@stdlib/array-base-take-indexed2": "^0.1.0",
     "@stdlib/array-base-without": "github:stdlib-js/array-base-without#main",
     "@stdlib/array-base-zeros": "^0.2.2",
     "@stdlib/assert-is-function": "^0.2.2",
@@ -53,7 +53,7 @@
     "@stdlib/ndarray-base-ndarraylike2object": "^0.2.2",
     "@stdlib/ndarray-base-numel": "^0.2.2",
     "@stdlib/ndarray-base-strides2order": "^0.2.2",
-    "@stdlib/ndarray-base-to-unique-normalized-indices": "github:stdlib-js/ndarray-base-to-unique-normalized-indices#main",
+    "@stdlib/ndarray-base-to-unique-normalized-indices": "^0.1.0",
     "@stdlib/ndarray-base-unary-loop-interchange-order": "^0.2.1",
     "@stdlib/ndarray-base-unary-tiling-block-size": "^0.2.2",
     "@stdlib/ndarray-base-vind2bind": "^0.2.2",
@@ -64,7 +64,7 @@
   "devDependencies": {
     "@stdlib/ndarray-base-to-array": "^0.2.1",
     "@stdlib/random-array-discrete-uniform": "^0.2.1",
-    "@stdlib/stats-base-ndarray-max-by": "github:stdlib-js/stats-base-ndarray-max-by#main",
+    "@stdlib/stats-base-ndarray-max-by": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
@@ -97,7 +97,6 @@
     "accumulation",
     "vector"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
