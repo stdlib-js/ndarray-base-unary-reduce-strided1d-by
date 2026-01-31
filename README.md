@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import unaryReduceStrided1dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@esm/index.mjs';
+import unaryReduceStrided1dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@v0.1.0-esm/index.mjs';
 ```
 
 #### unaryReduceStrided1dBy( fcn, arrays, dims\[, options], clbk\[, thisArg] )
@@ -253,7 +253,7 @@ import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@esm/index.mjs';
 import maxBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-max-by@esm/index.mjs';
-import unaryReduceStrided1dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@esm/index.mjs';
+import unaryReduceStrided1dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary-reduce-strided1d-by@v0.1.0-esm/index.mjs';
 
 function clbk( value ) {
     return value * 2.0;
