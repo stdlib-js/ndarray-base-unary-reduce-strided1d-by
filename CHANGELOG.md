@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`d2a810a`](https://github.com/stdlib-js/stdlib/commit/d2a810a7a940c8182ed3c9870cf26cb901091e89) - **refactor:** use already defined variable _(by Athan Reines)_
 -   [`07462e4`](https://github.com/stdlib-js/stdlib/commit/07462e494d3442559bb88d713009f50f9130b33e) - **refactor:** support ancillary ndarray arguments with trailing dimensions _(by Athan Reines)_
 
 </details>
