@@ -228,7 +228,11 @@ var count = ctx.count;
 
 ## Notes
 
--   The output ndarray and any additional ndarray arguments are expected to have the same dimensions as the non-reduced dimensions of the input ndarray. When calling the reduction function, any additional ndarray arguments are provided as zero-dimensional ndarray-like objects.
+-   The output ndarray is expected to have the same dimensions as the non-reduced dimensions of the input ndarray.
+
+-   Any additional ndarray arguments are expected to have the same leading dimensions as the non-reduced dimensions of the input ndarray.
+
+-   When calling the reduction function, any additional ndarray arguments are provided as k-dimensional subarrays, where `k = M - N` with `M` being the number of dimensions in an ndarray argument and `N` being the number of non-reduced dimensions in the input ndarray. For example, if an input ndarray has three dimensions, the number of reduced dimensions is two, and an additional ndarray argument has one dimension, thus matching the number of non-reduced dimensions in the input ndarray, the reduction function is provided a zero-dimensional subarray as an additional ndarray argument. In the same scenario but where an additional ndarray argument has two dimensions, thus exceeding the number of non-reduced dimensions in the input ndarray, the reduction function is provided a one-dimensional subarray as an additional ndarray argument.
 
 -   The reduction function is expected to have the following signature:
 
@@ -238,7 +242,7 @@ var count = ctx.count;
 
     where
 
-    -   **arrays**: array containing a one-dimensional subarray of the input ndarray and any additional ndarray arguments as zero-dimensional ndarrays.
+    -   **arrays**: array containing a one-dimensional subarray of the input ndarray and any additional ndarray arguments as subarrays.
     -   **options**: function options (_optional_).
     -   **clbk**: callback function.
     -   **thisArg**: callback execution context (_optional_).
@@ -321,11 +325,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -341,8 +340,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-unary-reduce-strided1d-by.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-unary-reduce-strided1d-by
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-unary-reduce-strided1d-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-unary-reduce-strided1d-by?branch=main
@@ -371,8 +370,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/tree/esm
 [esm-readme]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-unary-reduce-strided1d-by/main/LICENSE
 
 </section>
 
