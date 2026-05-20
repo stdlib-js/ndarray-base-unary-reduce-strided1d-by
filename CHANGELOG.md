@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`8bc28dd`](https://github.com/stdlib-js/stdlib/commit/8bc28dd32b2b136b57c4c5c5d9298988e8d1ef47) - **refactor:** use utility to create objects having a consistent hidden shape _(by Athan Reines)_
 -   [`e47ee45`](https://github.com/stdlib-js/stdlib/commit/e47ee4551cf19ad584361fb80c9eed84ff9ea792) - **fix:** resolve bugs, docs, and JSDoc type errors [(#11337)](https://github.com/stdlib-js/stdlib/pull/11337) _(by Philipp Burckhardt)_
 -   [`d2a810a`](https://github.com/stdlib-js/stdlib/commit/d2a810a7a940c8182ed3c9870cf26cb901091e89) - **refactor:** use already defined variable _(by Athan Reines)_
 -   [`07462e4`](https://github.com/stdlib-js/stdlib/commit/07462e494d3442559bb88d713009f50f9130b33e) - **refactor:** support ancillary ndarray arguments with trailing dimensions _(by Athan Reines)_
